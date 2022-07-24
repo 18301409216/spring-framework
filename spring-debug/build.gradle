@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+group 'org.springframework'
+version '6.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(project(":spring-context"))
+    testCompile(testFixtures(project(":spring-context")))
+}
+
+test {
+    useJUnitPlatform()
+}

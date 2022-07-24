@@ -13,6 +13,7 @@ include "spring-context"
 include "spring-context-indexer"
 include "spring-context-support"
 include "spring-core"
+include "spring-debug"
 include "kotlin-coroutines"
 project(':kotlin-coroutines').projectDir = file('spring-core/kotlin-coroutines')
 include "spring-expression"
@@ -36,3 +37,5 @@ rootProject.name = "spring"
 rootProject.children.each {project ->
 	project.buildFileName = "${project.name}.gradle"
 }
+include 'spring-debug'
+
