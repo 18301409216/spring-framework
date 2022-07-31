@@ -6,7 +6,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Hello world!");
 		//1. 创建 Spring 的 IOC 容器
 		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 		//2. 从 IOC 容器中获取 bean 的实例

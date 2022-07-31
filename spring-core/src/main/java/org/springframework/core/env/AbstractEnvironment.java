@@ -121,6 +121,7 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * @see #customizePropertySources(MutablePropertySources)
 	 */
 	public AbstractEnvironment() {
+		// 定制化属性资源，就是让子类自己去实现
 		customizePropertySources(this.propertySources);
 	}
 
@@ -201,6 +202,7 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * @see org.springframework.context.ApplicationContextInitializer
 	 */
 	protected void customizePropertySources(MutablePropertySources propertySources) {
+		// 没有实现，由子类自己实现
 	}
 
 	/**
